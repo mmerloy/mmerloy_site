@@ -1,0 +1,56 @@
+html , body
+{
+  background-color: #ebd3e8;
+  height:100%;
+  line-height: 1;
+  font-size: 19px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+/*--------------Переопределение стилей bootstrap------------------------*/
+.btn-success,.btn-primary {
+    color: #fff;
+    background-color: #ed7ee2;
+    border-color: #e079d6;
+}
+
+.bg-light {
+    background-color: #ebd3e8!important;
+}
+
+.btn-success, .btn-primary:hover
+{
+    background-color: #e079d6;
+}
+
+a {
+    color: #ed7ee2;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.alert-warning {
+    color: #030203;
+    background-color: #ed7ee2;
+    border-color: #ffeeba;
+    border-top-color: rgb(255, 238, 186);
+    border-right-color: rgb(255, 238, 186);
+    border-bottom-color: rgb(255, 238, 186);
+    border-left-color: rgb(255, 238, 186);
+}
+/*--------------------------------------*/
+
+/* Это стили для не валидных полей */
+input:invalid{
+  border-color: #900;
+  background-color: #FDD;
+}
+
+input:focus:invalid {
+  outline: none;
+}
+
+a:hover {
+    background: #e87bdd;
+    border-radius: 10px;
+}

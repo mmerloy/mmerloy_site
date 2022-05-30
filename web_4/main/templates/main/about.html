@@ -1,0 +1,54 @@
+<html lang="ru">
+{% extends 'main/base.html'%}
+
+{% block title %}
+Страница о разработчике
+{% endblock %}
+
+{% block content %}
+<div class="row justify-content-md-center">
+    <div class="lng-about-me col-md-auto">
+        <h4>
+            Сайт разработан в учебных целях Мариной Алиной, студенткой 3 курса специальности "Программная инженерия"<br><br>
+        </h4>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <iframe width="400" height="441" src="https://www.youtube.com/embed/7L2aRW8wfUY" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe><br><br><br>
+    </div>
+
+    <div class="lng-contacts col">
+        <div id="contacts">
+           <h4>
+               <p>Вы можете связаться со мной следующим образом<br>
+                Телефон: +7(977)396-03-51 <br>
+                Почта: a.mmerloy@gmail.com <br>
+                Адрес: г.Зеленоград ул.Юности д.9 <br>
+               </p>
+           </h4>
+        </div>
+    </div>
+
+</div>
+<p class="lab6" id="lab6"> </p>
+<script>
+        function print() {
+            document.getElementById("lab6").innerHTML = "Данные local Storage " + date.toString()
+        }
+
+        //Заполнение хранилища
+<!--        let date = new Date();-->
+<!--        localStorage.setItem("DataFormat", date.toLocaleString());-->
+
+        date = localStorage.getItem("DataFormat");
+
+        print()
+</script>
+
+{% endblock %}
+</html>

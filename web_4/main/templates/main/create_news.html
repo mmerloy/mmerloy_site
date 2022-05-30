@@ -1,0 +1,21 @@
+{% extends 'main/base.html'%}
+
+{% block title %}
+Новости
+{% endblock %}
+
+{% block content %}
+<h3>Вы попали на страницу с хорошими новостями<br>
+    Желаете добавить новость?
+</h3>
+<form method="post" id="create_news_frm">
+    {% csrf_token %}
+    {{ form.title }}<br>
+    {{ form.text }}<br>
+    <button class="btn btn-success" type="submit" id="create_news_button">Добавить</button>
+    <span>{{ error }}</span>
+</form>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="/static/js/create_news.js"></script>
+
+{% endblock %}

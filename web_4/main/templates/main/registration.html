@@ -1,0 +1,45 @@
+{% extends 'main/base.html'%}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+
+<div class = "form">
+   <form action = "#" id = "form" name="form" class = "form_body">
+
+     <h1 class = "form_title" >Registration Form</h1>
+
+     <div class = "form_item">
+       <label form = "form_name" class = "form_label1">Name*:</label><br>
+       <input id = "form_name" type = "text" name = "name" class = "form_input_req_fio">
+     </div>
+
+     <div class = "form_item">
+       <label form = "form_surname" class = "form_label1">Surname*:</label><br>
+       <input id = "form_surname" type = "text" name = "surname" class = "form_input_req_fio">
+     </div>
+
+     <div class = "form_item">
+       <label form = "form_patronymic" class = "form_label1">Patronymic:</label><br>
+       <input id = "form_patronymic" type = "text" name = "patronymic" class = "form_input_req_fio">
+     </div>
+
+     <div class = "form_item">
+       <label form = "form_email" class = "form_label1">Email*:</label><br>
+       <input id = "form_email" type = "text" name = "email" class = "form_input_req_email">
+     </div>
+
+     <div class = "form_item">
+       <label form = "form_password" class = "form_label1">Password*:</label><br>
+       <input id = "form_password" type = "password" name = "password" class = "form_input_req_password">
+     </div>
+
+     <button class = "form_button" type='submit'> Send</button >
+
+   </form>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src= "/static/js/validation.js"> </script>
+  <script src="/static/js/javascript_api.js"> </script>
+</div>
+{% endblock %}
