@@ -30,7 +30,7 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
-DISABLE_COLLECTSTATIC=1
+# DISABLE_COLLECTSTATIC=1
 
 INSTALLED_APPS = [
     'django.contrib.admin',
