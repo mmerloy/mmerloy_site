@@ -21,6 +21,8 @@ html , body
 .btn-success, .btn-primary:hover
 {
     background-color: #e079d6;
+    color: #fff;
+    border-color: #e079d6;
 }
 
 a {
